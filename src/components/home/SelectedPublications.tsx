@@ -37,7 +37,19 @@ export default function SelectedPublications({ publications, title = 'Selected P
                         className="bg-neutral-50 dark:bg-neutral-800 p-4 rounded-lg shadow-sm border border-neutral-200 dark:border-[rgba(148,163,184,0.24)] hover:shadow-lg transition-all duration-200 hover:scale-[1.02]"
                     >
                         <h3 className="font-semibold text-primary mb-2 leading-tight">
-                            {pub.title}
+                            {(pub.pdfUrl || pub.url || pub.doi) ? (
+                                <a
+                                    href={pub.pdfUrl || pub.url || (pub.doi ? `https://doi.org/${pub.doi}` : undefined)}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-accent transition-colors"
+                                    title="Open paper in a new tab"
+                                >
+                                    {pub.title}
+                                </a>
+                            ) : (
+                                pub.title
+                            )}
                         </h3>
                         <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-1">
                             {pub.authors.map((author, idx) => (

@@ -1,5 +1,9 @@
 # from your repo root
-npm install
+#npm install
+
+npm run dev
+http://localhost:3000
+
 npm run build   # (or whatever PRISM uses to export)
 
 # ensure docs is the deploy folder and contains the exported site
@@ -11,5 +15,7 @@ cp -r out docs  # if PRISM outputs to 'out'
 touch docs/.nojekyll
 
 git add -A
-git commit -m "Add .nojekyll for GitHub Pages"
+git commit -m "Updated the files Jan 18"
 git push
+
+https://zilai-wang.github.io/
