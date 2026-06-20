@@ -5,7 +5,7 @@ title = "About"
 research_interests = [
   "Automatic Speech Recognition",
   "LLM",
-  "Model Fusion"
+  "Self-Supervised Learning"
 ]
 
 [[sections]]
