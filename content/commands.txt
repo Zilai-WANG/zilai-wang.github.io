@@ -1,8 +1,12 @@
+
+# demo:
 # from your repo root
 #npm install
 
 npm run dev
 http://localhost:3000
+
+# upload to github:
 
 npm run build   # (or whatever PRISM uses to export)
 
@@ -15,7 +19,8 @@ cp -r out docs  # if PRISM outputs to 'out'
 touch docs/.nojekyll
 
 git add -A
-git commit -m "Updated the files Jan 18"
+git commit -m "Updated the files Feb 6"
 git push
 
 https://zilai-wang.github.io/
+
