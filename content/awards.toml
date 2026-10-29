@@ -4,6 +4,11 @@ description = "Honors and awards I have received."
 
 
 [[items]]
+title = "UCLA Departmental Fellowship"
+subtitle = "By UCLA"
+date = "2026"
+
+[[items]]
 title = "1st Runner-up of Inter-departmental Final Year Project"
 subtitle = "2023 outstanding works by students"
 date = "2023"
